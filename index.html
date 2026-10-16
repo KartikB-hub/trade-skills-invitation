@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Try Before You Train — Ireland’s 90-Minute Trade Tasters</title>
+<meta name="description" content="Try a real trade in 90 minutes. Hands-on evening tasters in electrical, plumbing and heat pumps, and carpentry and modular construction — led by working tradespeople.">
+<meta property="og:title" content="Try Before You Train — Ireland’s 90-Minute Trade Tasters">
+<meta property="og:description" content="Three evenings. Three real trades. One clearer next step. Hands-on tasters in electrical, plumbing and heat pumps, and carpentry and modular construction.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.github.io/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Try Before You Train — Ireland’s 90-Minute Trade Tasters">
+<meta name="twitter:description" content="Three evenings. Three real trades. One clearer next step.">
+<!-- Add og:image later: 1200x630 PNG matching dark theme -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+(function(){
+  if(localStorage.getItem('theme')==='light') document.documentElement.classList.add('light');
+})();
+</script>
+<style>
+:root{
+--bg:#020a18;
+--bg-grad:linear-gradient(170deg,#020a18,#041028 40%,#06142e 70%,#020a18);
+--surface:rgba(8,24,56,0.85);
+--border:rgba(0,170,255,0.12);
+--text:#d0e0f0;--text-bright:#e8f0ff;--text-dim:#6888aa;
+--neon:#00aaff;--cyan:#00e5ff;--green:#00ff88;--amber:#ffaa00;
+}
+html.light{
+--bg:#f3f7fc;
+--bg-grad:linear-gradient(170deg,#f3f7fc,#eaf2fb 40%,#e4eefa 70%,#f3f7fc);
+--surface:rgba(255,255,255,0.9);
+--border:rgba(0,110,190,0.16);
+--text:#24384f;--text-bright:#0c1c2c;--text-dim:#5b7089;
+--neon:#0077cc;--cyan:#0088aa;--green:#00885a;--amber:#a86a00;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;color:var(--text);background:var(--bg)}
+.bg{position:fixed;inset:0;background:var(--bg-grad);z-index:-4}
+.grid{position:fixed;inset:0;z-index:-3;opacity:.03;background-image:linear-gradient(var(--neon) 1px,transparent 1px),linear-gradient(90deg,var(--neon) 1px,transparent 1px);background-size:60px 60px}
+.orb{position:fixed;border-radius:50%;filter:blur(100px);opacity:.08;z-index:-2;pointer-events:none}
+.o1{width:520px;height:520px;background:var(--neon);top:-140px;left:-180px;animation:a1 28s ease-in-out infinite alternate}
+.o2{width:460px;height:460px;background:var(--green);bottom:-160px;right:-160px;animation:a2 34s ease-in-out infinite alternate}
+@keyframes a1{to{transform:translate(90px,70px)}}
+@keyframes a2{to{transform:translate(-80px,-60px)}}
+header{position:sticky;top:0;z-index:100;backdrop-filter:blur(20px);background:var(--surface);border-bottom:1px solid var(--border)}
+.hi{max-width:880px;margin:0 auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center}
+.brand{font-weight:700;color:var(--text-bright);text-decoration:none}
+.icon-btn{width:38px;height:38px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text);cursor:pointer;font-size:1rem}
+.icon-btn:hover{border-color:var(--neon);color:var(--cyan)}
+main{max-width:880px;margin:0 auto;padding:0 20px;position:relative;z-index:1}
+.hero{padding:76px 0 48px}
+.kicker{color:var(--neon);font-weight:600;text-transform:uppercase;letter-spacing:.05em;font-size:.9rem;margin-bottom:16px}
+h1{font-size:clamp(2.3rem,6vw,3.5rem);color:var(--text-bright);line-height:1.08;margin-bottom:20px}
+.sub{font-size:1.15rem;max-width:660px;margin-bottom:30px}
+.cta{display:inline-block;background:var(--neon);color:#02101f;font-weight:700;padding:13px 26px;border-radius:12px;text-decoration:none;transition:.2s}
+.cta:hover{background:var(--cyan);box-shadow:0 0 24px var(--neon)}
+html.light .cta{color:#fff}
+section{margin:26px 0}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px}
+h2{color:var(--text-bright);font-size:1.45rem;margin-bottom:14px}
+h3{color:var(--text-bright);font-size:1.1rem;margin-bottom:8px}
+.reasons{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.reason{border:1px solid var(--border);border-radius:14px;padding:18px}
+.reason b{color:var(--text-bright)}
+.sessions{display:grid;gap:16px}
+.session{border:1px solid var(--border);border-radius:16px;padding:22px}
+.session .tag{display:inline-block;border:1px solid var(--border);color:var(--neon);border-radius:999px;padding:4px 12px;font-size:.8rem;margin-bottom:10px}
+.session ul{margin:10px 0 14px 18px}
+.price{color:var(--green);font-weight:700}
+.flow{display:grid;gap:10px;margin-top:12px}
+.step{display:flex;gap:12px;align-items:flex-start}
+.num{flex:0 0 auto;width:28px;height:28px;border-radius:50%;border:1px solid var(--neon);color:var(--neon);display:grid;place-items:center;font-size:.8rem;font-weight:700}
+.q{display:none}
+.q.active{display:block}
+.choice{display:block;width:100%;text-align:left;background:transparent;border:1px solid var(--border);color:var(--text);border-radius:12px;padding:13px 16px;margin-bottom:10px;cursor:pointer;font:inherit;transition:.2s}
+.choice:hover{border-color:var(--neon);color:var(--cyan)}
+.result{display:none}
+.result.active{display:block}
+.badge{display:inline-block;border:1px solid var(--green);color:var(--green);border-radius:999px;padding:4px 12px;font-size:.8rem;margin-bottom:12px}
+.rec{border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px}
+.rec b{color:var(--text-bright)}
+footer{max-width:880px;margin:56px auto 0;padding:24px 20px 40px;color:var(--text-dim);border-top:1px solid var(--border);position:relative;z-index:1;font-size:.88rem}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="grid"></div><div class="orb o1"></div><div class="orb o2"></div>
+
+<header><div class="hi">
+<a class="brand" href="#top">Try Before You Train</a>
+<button class="icon-btn" id="theme" title="Toggle theme">☀️</button>
+</div></header>
+
+<main id="top">
+<section class="hero">
+<p class="kicker">Ireland’s 90-minute trade tasters</p>
+<h1>Find your next skill — before you commit to a course.</h1>
+<p class="sub">Three evenings. Three real trades. One clearer next step. Try electrical, plumbing and heat pumps, or carpentry and modular construction — led by working tradespeople.</p>
+<a class="cta" href="#qualifier">Find your next skill</a>
+</section>
+
+<section class="card">
+<h2>Why this is for you</h2>
+<div class="reasons">
+<div class="reason"><b>Try before you train.</b> Handle real tools and complete a real task before committing to an apprenticeship or course.</div>
+<div class="reason"><b>Meet the person doing the job.</b> Every session is led by a working tradesperson who can explain the work honestly.</div>
+<div class="reason"><b>Leave with a next step.</b> Get a personalised recommendation for the pathway that best fits your interests.</div>
+</div>
+</section>
+
+<section class="card">
+<h2>What a session looks like</h2>
+<div class="flow">
+<div class="step"><span class="num">1</span><div><b>Welcome:</b> A working tradesperson explains what the job really looks like day to day.</div></div>
+<div class="step"><span class="num">2</span><div><b>Safety and tools:</b> Get introduced to the tools, components and safety basics.</div></div>
+<div class="step"><span class="num">3</span><div><b>Hands-on challenge:</b> Complete a real, achievable task in 40 minutes.</div></div>
+<div class="step"><span class="num">4</span><div><b>Career clinic:</b> Hear about entry routes, certifications, pay realities and demand.</div></div>
+<div class="step"><span class="num">5</span><div><b>Next-step debrief:</b> Leave with a suggested pathway matched to your interests.</div></div>
+</div>
+</section>
+
+<section class="card">
+<h2>Choose your taster</h2>
+<div class="sessions">
+<div class="session">
+<span class="tag">Electrical</span>
+<h3>Wire Your First Smart Circuit</h3>
+<p>See whether electrical work clicks for you — in 90 minutes.</p>
+<ul><li>Build and test a safe, supervised low-voltage circuit.</li><li>Diagnose a simple fault and make it work.</li><li>Explore solar PV, EV charging and smart controls.</li></ul>
+<p class="price">€35 per session</p>
+</div>
+<div class="session">
+<span class="tag">Plumbing & Heating</span>
+<h3>Heat Your Home Differently</h3>
+<p>Find out how Ireland’s homes will be heated next.</p>
+<ul><li>Handle pipework, valves, fittings and heating controls.</li><li>Work through a heat-pump diagnostic scenario.</li><li>Compare conventional and renewable-heating systems.</li></ul>
+<p class="price">€35 per session</p>
+</div>
+<div class="session">
+<span class="tag">Carpentry & MMC</span>
+<h3>Build It Better</h3>
+<p>Build something real in 90 minutes.</p>
+<ul><li>Measure, mark, cut and assemble a small project.</li><li>See how timber-frame and modular homes are made.</li><li>Try a simple digital site-coordination exercise.</li></ul>
+<p class="price">€35 per session</p>
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2>Tools + Career Clinic</h2>
+<p>For €60, add a 20-minute small-group career clinic, a personalised next-step map, priority booking for another taster, and a photo of your finished project.</p>
+</section>
+
+<section class="card" id="qualifier">
+<h2>Is this for you?</h2>
+<p>Answer five quick questions to get three recommended taster sessions.</p>
+<div id="quiz">
+<div class="q active" data-q="0">
+<h3>1. What appeals to you most?</h3>
+<button class="choice" data-s="E:3,H:1,C:1">Working with technology, circuits and energy systems</button>
+<button class="choice" data-s="H:3,E:1,C:1">Understanding how homes are heated and serviced</button>
+<button class="choice" data-s="C:3,E:1,H:1">Making and building physical things</button>
+</div>
+<div class="q" data-q="1">
+<h3>2. Which task would you most enjoy?</h3>
+<button class="choice" data-s="E:3,H:1,C:0">Wiring and testing a circuit</button>
+<button class="choice" data-s="H:3,E:1,C:1">Diagnosing a heating system</button>
+<button class="choice" data-s="C:3,E:0,H:1">Measuring, cutting and assembling something</button>
+</div>
+<div class="q" data-q="2">
+<h3>3. How do you feel about hands-on, physical work?</h3>
+<button class="choice" data-s="E:1,H:1,C:3">I enjoy it — the more practical, the better</button>
+<button class="choice" data-s="E:2,H:2,C:2">I’m open to it if the work is interesting</button>
+<button class="choice" data-s="E:1,H:1,C:1">I prefer technical or diagnostic work</button>
+</div>
+<div class="q" data-q="3">
+<h3>4. What future-facing area interests you most?</h3>
+<button class="choice" data-s="E:3,H:1,C:0">Solar, EV charging and smart homes</button>
+<button class="choice" data-s="H:3,E:1,C:0">Heat pumps and renewable heating</button>
+<button class="choice" data-s="C:3,E:0,H:0">Modular and timber-frame construction</button>
+</div>
+<div class="q" data-q="4">
+<h3>5. What is your main goal right now?</h3>
+<button class="choice" data-s="E:2,H:2,C:2">Explore a career change</button>
+<button class="choice" data-s="E:2,H:2,C:2">Find a practical route after school</button>
+<button class="choice" data-s="E:1,H:1,C:1">Try something new and meet people</button>
+</div>
+</div>
+<div class="result" id="result">
+<span class="badge">Your recommended tasters</span>
+<div id="recs"></div>
+<a class="cta" href="#top">Book a taster</a>
+</div>
+</section>
+</main>
+
+<footer>Try Before You Train · <span id="year"></span> · Built with the AI Badge</footer>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const themeBtn=document.getElementById('theme');
+themeBtn.onclick=()=>{const l=document.documentElement.classList.toggle('light');localStorage.setItem('theme',l?'light':'dark');themeBtn.textContent=l?'🌙':'☀️';};
+let scores={E:0,H:0,C:0},current=0;
+const qs=[...document.querySelectorAll('.q')];
+document.querySelectorAll('.choice').forEach(btn=>btn.onclick=()=>{
+ Object.entries(JSON.parse(btn.dataset.s)).forEach(([k,v])=>scores[k]+=v);
+ qs[current].classList.remove('active');current++;
+ if(current<qs.length){qs[current].classList.add('active');}
+ else showResult();
+});
+function showResult(){
+ const sorted=Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+ const map={
+ E:{title:'Wire Your First Smart Circuit',why:'Your answers point toward electrical work, energy systems and smart-home technology.'},
+ H:{title:'Heat Your Home Differently',why:'Your answers point toward plumbing, heating systems and renewable heat.'},
+ C:{title:'Build It Better',why:'Your answers point toward carpentry, making and modular construction.'}
+ };
+ document.getElementById('recs').innerHTML=sorted.slice(0,3).map(([k])=>`<div class="rec"><b>${map[k].title}</b><br>${map[k].why}</div>`).join('');
+ document.getElementById('result').classList.add('active');
+}
+</script>
+</body>
+</html>
